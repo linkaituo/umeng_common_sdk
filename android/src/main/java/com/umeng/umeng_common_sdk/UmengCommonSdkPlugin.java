@@ -17,7 +17,7 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
+// import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** UmengCommonSdkPlugin */
 public class UmengCommonSdkPlugin implements FlutterPlugin, MethodCallHandler {
@@ -27,13 +27,13 @@ public class UmengCommonSdkPlugin implements FlutterPlugin, MethodCallHandler {
   /// when the Flutter Engine is detached from the Activity
   private MethodChannel channel;
 
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "umeng_common_sdk");
-    UmengCommonSdkPlugin plugin = new UmengCommonSdkPlugin();
-    plugin.mContext = registrar.context();
-    channel.setMethodCallHandler(plugin);
-    onAttachedEngineAdd();
-  }
+  // public static void registerWith(Registrar registrar) {
+  //   final MethodChannel channel = new MethodChannel(registrar.messenger(), "umeng_common_sdk");
+  //   UmengCommonSdkPlugin plugin = new UmengCommonSdkPlugin();
+  //   plugin.mContext = registrar.context();
+  //   channel.setMethodCallHandler(plugin);
+  //   onAttachedEngineAdd();
+  // }
 
   private static void onAttachedEngineAdd() {
 // add by umeng
