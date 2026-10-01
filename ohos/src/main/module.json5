@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "umeng_common_sdk",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}
